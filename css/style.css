@@ -1,0 +1,7 @@
+.container-list {
+    min-height: 70vh;
+    width: 80vw;
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+}

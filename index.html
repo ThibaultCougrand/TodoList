@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Todo List</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript" defer></script>
+        <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript" defer></script>
     </head>
     <body>
+        <section>
+            <label>Titre</label>
+            <input type="text" class="title-list">
+            <label>Description</label>
+            <input type="text" class="contain-list">
+            <div class="container-list">
+                
+            </div>
+            <input type="button" class="add-list" value="Ajouter">
+            <input type="button" class="complete-list" value="Terminer">
+            <input type="button" class="update-list" value="Modifier">
+            <input type="button" class="up-list" value="Monter">
+            <input type="button" class="remove-list" value="Supprimer">
+        </section>
     </body>
 </html>
