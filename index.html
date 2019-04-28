@@ -5,23 +5,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker" rel="stylesheet">
+        <!-- =========== -->
         <script src="js/main.js" type="text/javascript" defer></script>
-        <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript" defer></script>
+        <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <section>
-            <label>Titre</label>
-            <input type="text" class="title-list">
-            <label>Description</label>
-            <input type="text" class="contain-list">
-            <div class="container-list">
-                
+        <section class="todo">  
+            <h1>Ma TodoList</h1>
+            <div class="container-input">
+                <label>Titre</label>
+                <input type="text" class="title-list">
+                <label>Description</label>
+                <input type="text" class="content-list">
             </div>
-            <input type="button" class="add-list" value="Ajouter">
-            <input type="button" class="complete-list" value="Terminer">
-            <input type="button" class="update-list" value="Modifier">
-            <input type="button" class="up-list" value="Monter">
-            <input type="button" class="remove-list" value="Supprimer">
+            <div class="container-button">
+                <input type="button" class="add-item" value="Ajouter">
+                <input type="button" class="finish-item" value="Terminer">
+                <input type="button" class="update-item" value="Modifier">
+                <input type="button" class="up-item" value="Monter">
+                <input type="button" class="remove-item" value="Supprimer">
+                <input type="button" class="selectall-item" value="Tout selectionner">
+            </div>
+            <input type="button" class="save-item" value="Sauvegarder les taches">
+            <div class="container-list"></div>
         </section>
     </body>
 </html>
