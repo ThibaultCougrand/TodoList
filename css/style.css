@@ -20,6 +20,7 @@ input {
 }
 .container-input input {
     font-family: 'Indie Flower', cursive;
+    margin-bottom: 10px;
 }
 .container-button {
     margin-top: 10px;
