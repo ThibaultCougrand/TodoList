@@ -57,7 +57,9 @@ $(function () {
             article.css("background-color", colorsPostIt[randomColor]);
             let titleArticle = $("<h3></h3>").text(title);
             let containArticle = $("<p></p>").text(content);
-            let timedatetask = $('<p class="timedate"></p>').html(hourTask+" le "+dateTask);
+            if (hourTask !== "" && dateTask !== "") {
+                let timedatetask = $('<p class="timedate"></p>').html(hourTask+" le "+dateTask);
+            }
             article.append(titleArticle);
             article.append(containArticle);
             article.append(timedatetask);
@@ -82,8 +84,9 @@ $(function () {
         let item = $(".clicked");
         let title = $(".title-list").val();
         let content = $(".content-list").val();
-        if (title !== "" && content !== "" && item.length === 1) {
+        if (title !== "" && item.length === 1) {
             $(".clicked h3").text(title);
+        } else if (content !== "" && item.length === 1) {
             $(".clicked p").text(content);
         }
         $(".title-list").val("");
@@ -137,5 +140,5 @@ $(function () {
     }
     
     verifDate();
-    setInterval(verifDate, 10000);
+    setInterval(verifDate, 12*60*60*1000);
 });
